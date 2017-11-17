@@ -45,22 +45,22 @@ class Board < ApplicationRecord
     [x, column]
   end
 
-  def play_move(marker)
-    column = 0
-    until column > 0 && column < 8
-      column = get_user_column.to_i
-    end
-    @position = place_marker(marker, column)
-  end
+  # def play_move(marker)
+  #   column = 0
+  #   until column > 0 && column < 8
+  #     column = get_user_column.to_i
+  #   end
+  #   @position = place_marker(marker, column)
+  # end
 
 
-  def take_turn
-    marker = @turn_count.even? ? marker = "X" : marker = "O"
-    play_move(marker)
-    puts "Here's the current board:"
-    display_board
-    @turn_count += 1
-  end
+  # def take_turn
+  #   marker = @turn_count.even? ? marker = "X" : marker = "O"
+  #   play_move(marker)
+  #   puts "Here's the current board:"
+  #   display_board
+  #   @turn_count += 1
+  # end
 
   def win?
     horizontal || vertical || left_diagonal || right_diagonal
