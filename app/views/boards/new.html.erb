@@ -1,0 +1,44 @@
+<div class="container">
+    <h1>Welcome to Connect 4!</h1>
+    <p>Player <%= @player_number %>, choose a column:</p>
+      <div class="board">
+
+        <div class="row">
+          <%= form_tag "/boards/#{@game.id}" do %>
+          <div class="num">
+              <%= submit_tag '1', class: 'button' %>
+          </div>
+          <div class="num">
+              <%= submit_tag '2', class: 'button' %>
+          </div>
+          <div class="num">
+              <%= submit_tag '3', class: 'button' %>
+          </div>
+          <div class="num">
+              <%= submit_tag '4', class: 'button' %>
+          </div>
+          <div class="num">
+              <%= submit_tag '5', class: 'button' %>
+          </div>
+          <div class="num">
+              <%= submit_tag '6', class: 'button' %>
+          </div>
+          <div class="num">
+              <%= submit_tag '7', class: 'button' %>
+            <% end %>
+          </div>
+        </div>
+
+
+        <% @board.each.with_index do |row, row_index| %>
+          <div class="row">
+            <% row.each.with_index do |cell, cell_index| %>
+              <div id="<%=row_index%>-<%=cell_index %>" class="col cell">
+                <div class="circle <%= 'red' if cell == "X" %> <%= 'blue' if cell == "O" %>"></div>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+
+      </div>
+    </div>

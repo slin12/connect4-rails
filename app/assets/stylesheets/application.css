@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.cell {
+  height: 100px;
+  width: 100px;
+  background-color: #1f5fc6;
+  display: inline-block;
+  margin: -2px;
+}
+
+.num {
+  width: 96px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.button {
+    font-size: 18px;
+    width: 50px;
+    background-color: #6ed8b7;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px #60a590;
+    border-radius: 10%;
+}
+
+.row .col {
+  padding: 0;
+}
+
+.row {
+  width: 700px;
+  margin: -3px auto;
+}
+
+.circle {
+  height: 96px;
+  width: 96px;
+  background-color: white;
+  border-radius: 100%;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.board {
+  margin-top: 50px;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}

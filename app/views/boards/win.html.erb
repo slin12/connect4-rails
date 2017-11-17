@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Welcome to Connect 4!</h1>
+    <p></p>
+      <div class="board">
+
+
+        <% @board.each.with_index do |row, row_index| %>
+          <div class="row">
+            <% row.each.with_index do |cell, cell_index| %>
+              <div id="<%=row_index%>-<%=cell_index %>" class="col cell">
+                <div class="circle <%= 'red' if cell == "X" %> <%= 'blue' if cell == "O" %>"></div>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+
+      </div>
+
+      <h1>Player <%= @player_number %> WINS!</h1>
+      <%= link_to "Play Again", root_path %>
+    </div>
