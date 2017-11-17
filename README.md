@@ -1,24 +1,6 @@
-# README
+# Connect 4 On Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Connect 4 App built with Ruby on Rails and HTML/CSS. No Javascript involved. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Play Game Here](http://rails-connect-four.herokuapp.com/)
+[Read About it Here](https://medium.com/@shirleyl/connect-4-from-cli-to-rails-app-fc9cad0d948f)
